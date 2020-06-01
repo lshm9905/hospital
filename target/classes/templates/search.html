@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--<html lang="en">-->
+<html xmlns:th="http://www.thymeleaf.org">
+<!--<![endif]-->
+
+<head>
+  <!-- =====  BASIC PAGE NEEDS  ===== -->
+  <meta charset="utf-8">
+  <title>HealthCare</title>
+  <!-- =====  SEO MATE  ===== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="distribution" content="global">
+  <meta name="revisit-after" content="2 Days">
+  <meta name="robots" content="ALL">
+  <meta name="rating" content="8 YEARS">
+  <meta name="Language" content="en-us">
+  <meta name="GOOGLEBOT" content="NOARCHIVE">
+  <!-- =====  MOBILE SPECIFICATION  ===== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width">
+  <!-- =====  CSS  ===== -->
+  <!--  th?????????-->
+  <link type="text/css" rel="styleSheet"  th:href="@{/css/style.css}" />
+  <link type="text/css" rel="styleSheet"  th:href="@{/css/font-awesome.min.css}" />
+  <link type="text/css" rel="styleSheet"  th:href="@{/css/bootstrap.css}" />
+  <link type="text/css" rel="styleSheet"  th:href="@{/css/magnific-popup.css}" />
+  <link type="text/css" rel="styleSheet"  th:href="@{/css/owl.carousel.css}" />
+  <link type="text/css" rel="styleSheet"  th:href="@{/css/jquery-ui.css}" />
+  <!-- ===== search box CSS  ===== -->
+
+
+</head>
+
+<body>
+  <!-- =====  LODER  ===== -->
+  <div class="loder"></div>
+  <div class="wrapper">
+    <!-- =====  HEADER START  ===== -->
+    <header id="header">
+      <div class="header">
+        <div class="container">
+          <nav class="navbar">
+            <div class="navbar-header mtb_20"> <a class="navbar-brand" href="index.html"> <img alt="HealthCared" src="../static/images/logo.png"> </a> </div>
+            <div class="header-right pull-right mtb_50">
+              <button class="navbar-toggle pull-left" type="button" data-toggle="collapse" data-target=".js-navbar-collapse"> <span class="i-bar"><i class="fa fa-bars"></i></span></button>
+              <div class="main-search pull-right">
+                <div class="header-search"> <a id="search-overlay-btn" href="search.html"></a> </div>
+              </div>
+            </div>
+            <div class="collapse navbar-collapse js-navbar-collapse pull-right">
+              <ul id="menu" class="nav navbar-nav">
+                <li> <a href="index.html">首 &nbsp; 页</a></li>
+                <li> <a href="list.html">列 &nbsp; 表</a></li>
+                <li> <a href="ny.html">个人中心</a></li>
+                <li> <a href="about.html">关于我们</a></li>
+              </ul>
+            </div>
+            <!-- /.nav-collapse -->
+          </nav>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-3">
+              <div class="category">
+                <div class="menu-bar" data-target="#category-menu,#category-menu-responsive" data-toggle="collapse" aria-expanded="true" role="button">
+                  <h4 class="category_text">常见科室</h4>
+                  <span class="i-bar"><i class="fa fa-bars"></i></span></div>
+              </div>
+              <div id="category-menu-responsive" class="navbar collapse " aria-expanded="true" style="" role="button">
+                <div class="nav-responsive">
+                  <ul class="nav  main-navigation collapse in">
+                    <li><a href="#">内科</a></li>
+                    <li><a href="#">外科</a></li>
+                    <li><a href="#">妇科</a></li>
+                    <li><a href="#">儿科</a></li>
+                    <li><a href="#">皮肤科</a></li>
+                    <li><a href="#">眼科</a></li>
+                    <li><a href="#">口腔科</a></li>
+                    <li><a href="#">耳鼻喉科</a></li>
+                    <li><a href="#">中医科</a></li>
+                    <li><a href="#">男科</a></li>
+                    <li><a href="#">肿瘤科</a></li>
+                    <li><a href="#">传染科</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-8 col-md-8 col-lg-9">
+              <div class="header-bottom-right offers">
+              	<div class="marquee"><span><i class="fa fa-circle" aria-hidden="true"></i> 在线预约避免排队</span>
+                  <span><i class="fa fa-circle" aria-hidden="true"></i> 覆盖全国三甲医院 </span>
+                  <span><i class="fa fa-circle" aria-hidden="true"></i> 24小时在线服务</span>
+                  <span><i class="fa fa-circle" aria-hidden="true"></i> 全国名医预约挂号</span>
+                  <span><i class="fa fa-circle" aria-hidden="true"></i> 知名专家答疑解惑</span>
+                  <span><i class="fa fa-circle" aria-hidden="true"></i> 详细记录问诊记录</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- =====  HEADER END  ===== -->
+    <!-- =====  CONTAINER START  ===== -->
+    <div class="container">
+      <div class="row ">
+        <div id="column-left" class="col-sm-4 col-md-4 col-lg-3 ">
+          <div id="category-menu" class="navbar collapse in  mb_40" aria-expanded="true" style="" role="button">
+            <div class="nav-responsive">
+              <ul class="nav  main-navigation collapse in">
+                <li><a href="#">内科</a></li>
+                <li><a href="#">外科</a></li>
+                <li><a href="#">妇科</a></li>
+                <li><a href="#">儿科</a></li>
+                <li><a href="#">皮肤科</a></li>
+                <li><a href="#">眼科</a></li>
+                <li><a href="#">口腔科</a></li>
+                <li><a href="#">耳鼻喉科</a></li>
+                <li><a href="#">中医科</a></li>
+                <li><a href="#">男科</a></li>
+                <li><a href="#">肿瘤科</a></li>
+                <li><a href="#">传染科</a></li>
+                <li><a href="#">精神心理科</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- ==== 搜索框 ==== -->
+          <div class="filter left-sidebar-widget mb_50">
+<!--            <div class="heading-part mtb_20 ">-->
+<!--              <h2 class="main_title">Refinr Search</h2>-->
+<!--            </div>-->
+<!--            <div class="filter-block">-->
+<!--              <p>-->
+<!--                <label for="amount">Price range:</label>-->
+<!--                <input type="text" id="amount" readonly>-->
+<!--              </p>-->
+<!--              <div id="slider-range" class="mtb_20"></div>-->
+<!--              <div class="list-group">-->
+<!--                <div class="list-group-item mb_10">-->
+<!--                  <label>Color</label>-->
+<!--                  <div id="filter-group1">-->
+<!--                    <div class="checkbox">-->
+<!--                      <label>-->
+<!--                        <input value="" type="checkbox"> Red (10)</label>-->
+<!--                    </div>-->
+<!--                    <div class="checkbox">-->
+<!--                      <label>-->
+<!--                        <input value="" type="checkbox"> Green (06)</label>-->
+<!--                    </div>-->
+<!--                    <div class="checkbox ">-->
+<!--                      <label>-->
+<!--                        <input value="" type="checkbox"> Blue(09)-->
+<!--                      </label>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="list-group-item mb_10">-->
+<!--                  <label>Size</label>-->
+<!--                  <div id="filter-group3">-->
+<!--                    <div class="checkbox">-->
+<!--                      <label>-->
+<!--                        <input value="" type="checkbox"> Big (3)</label>-->
+<!--                    </div>-->
+<!--                    <div class="checkbox">-->
+<!--                      <label>-->
+<!--                        <input value="" type="checkbox"> Medium (2)</label>-->
+<!--                    </div>-->
+<!--                    <div class="checkbox">-->
+<!--                      <label>-->
+<!--                        <input value="" type="checkbox"> Small (1)</label>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <button type="button" class="btn">Refine Search</button>-->
+<!--              </div>-->
+<!--            </div>-->
+          </div>
+          <div class="left_banner left-sidebar-widget mb_50"> <a href="#"><img src="../static/images/left1.jpg" alt="Left Banner" class="img-responsive" /></a> </div>
+<br><br><br><br>
+          <div class="left-cms left-sidebar-widget mb_50">
+          <ul>
+            <li>
+              <div class="feature-i-left ptb_40">
+                <div class="icon-right Shipping"></div>
+                <h6>便捷预约</h6>
+                <p>网上预约避免排队</p>
+              </div>
+            </li>
+            <li>
+              <div class="feature-i-left ptb_40">
+                <div class="icon-right Order"></div>
+                <h6>在线解答</h6>
+                <p>每天24小时在线答疑</p>
+              </div>
+            </li>
+            <li>
+              <div class="feature-i-left ptb_40">
+                <div class="icon-right Save"></div>
+                <h6>全面覆盖</h6>
+                <p>包含全国300多家三甲医院</p>
+              </div>
+            </li>
+            <li>
+              <div class="feature-i-left ptb_40">
+                <div class="icon-right Safe"></div>
+                <h6>放心预约</h6>
+                <p>100%权威认证</p>
+              </div>
+            </li>
+          </ul>
+          </div>
+        </div>
+
+        <div class="col-sm-8 col-md-8 col-lg-9 mtb_30">
+          <!-- =====  BANNER STRAT  ===== -->
+          <div class="breadcrumb ptb_20">
+            <h1>查询</h1>
+            <ul>
+              <li><a href="home.html">首页</a></li>
+              <li class="active">查询</li>
+            </ul>
+          </div>
+<!--<div class="form-group required">-->
+<!--                        <div class="col-sm-12">-->
+<!--                          <label class="control-label" for="input-name">Your Name</label>-->
+<!--                          <input name="name" value="" id="input-name" class="form-control" type="text">-->
+<!--                        </div>-->
+<!--                      </div>-->
+
+          <!--信息查询-->
+          <form action="post">
+          <div class="form-group">
+          <div class="row">
+            <div class="col-md-6">
+<!--                    <div class="Sort-by col-md-6">-->
+              <label>选择查询类型</label>
+              <select name="product_size" id="select-by-size" class="selectpicker form-control">
+                <option>医院</option>
+                <option>医生</option>
+                <option>科室</option>
+<!--                <option>疾病</option>-->
+              </select>
+            </div>
+            <div class="col-md-6">
+            <div class="col-sm-12">
+                <label class="control-label" for="input-name">输入查询信息</label>
+                <input name="name" value="" id="input-name" class="form-control" type="text" placeholder="请在此输入">
+            </div>
+            </div>
+          </div>
+          </div>
+
+        <div id="slider-range+" class="mtb_20"></div>
+        <div class="list-group">
+          <div class="list-group-item mb_10">
+            <label>医院类型</label>
+            <div id="filter-group+1">
+                <div class="row">
+                    <div class="col-md-6">
+                    <div class="checkbox">
+                      <label>
+                        <input value="1" type="checkbox" name="chbox"> 综合医院</label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input value="2" type="checkbox" name="chbox"> 中医医院</label>
+                    </div>
+                    <div class="checkbox ">
+                      <label>
+                        <input value="3" type="checkbox" name="chbox"> 中西结合医院
+                      </label>
+                    </div>
+                    </div>
+                    <div class="col-md-6">
+                    <div class="checkbox"><label>
+                      <input value="4" type="checkbox" name="chbox"> 专科医院</label>
+                    </div>
+                    <div class="checkbox"><label>
+                        <input value="5" type="checkbox" name="chbox"> 妇幼保健院</label>
+                    </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="list-group-item mb_10">
+            <label>医院等级</label>
+            <div id="filter-group+3">
+                <div class="row">
+                  <div class="col-md-6">
+                  <div class="checkbox">
+                    <label>
+                      <input value="6" type="checkbox" name="chbox"> 三级甲等</label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input value="7" type="checkbox" name="chbox"> 三级乙等</label>
+                  </div>
+                  </div>
+                  <div class="col-md-6">
+                  <div class="checkbox">
+                    <label>
+                      <input value="8" type="checkbox" name="chbox"> 二级甲等</label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input value="9" type="checkbox" name="chbox"> 二级乙等</label>
+                  </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <br><button type="button" class="btn" onclick="search()">&nbsp;&nbsp;确&nbsp;&nbsp;认&nbsp;&nbsp;搜&nbsp;&nbsp;索&nbsp;&nbsp;</button>
+        </div>
+          </form>
+
+          <div class="category-page-wrapper mb_30">
+            <!--            <div class="col-xs-6 sort-wrapper">-->
+            <!--              <label class="control-label" for="input-sort">排列顺序 :</label>-->
+            <!--              <div class="sort-inner">-->
+            <!--                <select id="input-sort" class="form-control">-->
+            <!--                  <option value="ASC" selected="selected">默认</option>-->
+            <!--                  <option value="ASC">预约量</option>-->
+            <!--                  <option value="ASC">价格 (从低到高)</option>-->
+            <!--                  <option value="DESC">价格 (从高到低)</option>-->
+            <!--                </select>-->
+            <!--              </div>-->
+            <span></span>
+            <div class="limit">
+              <span></span>
+            </div>
+            <label class="control-label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;显示方式 :</label>
+            <div class="col-xs-2 text-right list-grid-wrapper">
+              <div class="btn-group btn-list-grid">
+                <button type="button" id="list-view" class="btn btn-default list-view"></button>
+                <button type="button" id="grid-view" class="btn btn-default grid-view active"></button>
+              </div>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+              <div class="item">
+                <div class="product-thumb clearfix mb_30">
+                  <div class="image product-imageblock"> <a href="#"> <img data-name="product_image" src="../static/images/menu-banner3.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> <img src="../static/images/menu-banner3.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> </a> </div>
+                  <div class="caption product-detail text-left">
+                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">XXX医院</a></h6>
+                    <div class="rating">
+                    </div>
+                    <p class="product-desc mt_20 mb_60"> More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.Cover Flow. Browse through your music collection by flipping..</p>
+                    <span class="price"><span class="amount"><span class="currencySymbol">预约量：</span>11321</span>
+                    </span>
+                    <!--                    <div class="button-group text-center">-->
+                    <!--                      <div class="wishlist"><a href="#"><span>wishlist</span></a></div>-->
+                    <!--                      <div class="quickview"><a href="#"><span>Quick View</span></a></div>-->
+                    <!--                      <div class="compare"><a href="#"><span>Compare</span></a></div>-->
+                    <!--                      <div class="add-to-cart"><a href="#"><span>Add to cart</span></a></div>-->
+                    <!--                    </div>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+              <div class="item">
+                <div class="product-thumb clearfix mb_30">
+                  <div class="image product-imageblock"> <a href="#"> <img data-name="product_image" src="../static/images/menu-banner3.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> <img src="../static/images/menu-banner3.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> </a> </div>
+                  <div class="caption product-detail text-left">
+                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">XXX科室</a></h6>
+                    <div class="rating">
+                    </div>
+                    <p class="product-desc mt_20 mb_60"> XXXX医院
+                      </br>&nbsp;&nbsp;&nbsp;</br>More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.Cover Flow. Browse through your music collection by flipping..</p>
+                    <span class="price"><span class="amount"><span class="currencySymbol">预约量：</span>11321</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+              <div class="item">
+                <div class="product-thumb clearfix mb_30">
+                  <div class="image product-imageblock"> <a href="#"> <img data-name="product_image" src="../static/images/menu-banner3.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> <img src="../static/images/menu-banner3.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> </a> </div>
+                  <div class="caption product-detail text-left">
+                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">XXX医生</a></h6>
+                    <div class="rating">
+                    </div>
+                    <p class="product-desc mt_20 mb_60"> 主任医师&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXXX医院<br>&nbsp;&nbsp;&nbsp;</br>
+                      More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.Cover Flow. Browse through your music collection by flipping..</p>
+                    <span class="price"><span class="amount"><span class="currencySymbol">预约量：</span>11321</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+              <div class="item">
+                <div class="product-thumb clearfix mb_30">
+                  <div class="image product-imageblock"> <a href="#"> <img data-name="product_image" src="../static/images/menu-banner3.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> <img src="../static/images/menu-banner3.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> </a> </div>
+                  <div class="caption product-detail text-left">
+                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">XXX医院</a></h6>
+                    <div class="rating">
+                    </div>
+                    <p class="product-desc mt_20 mb_60"> More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.Cover Flow. Browse through your music collection by flipping..</p>
+                    <span class="price"><span class="amount"><span class="currencySymbol">预约量：</span>11321</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+              <div class="item">
+                <div class="product-thumb clearfix mb_30">
+                  <div class="image product-imageblock"> <a href="#"> <img data-name="product_image" src="../static/images/menu-banner3.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> <img src="../static/images/menu-banner3.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> </a> </div>
+                  <div class="caption product-detail text-left">
+                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">Latin literature from 45 BC, making it over old.</a></h6>
+                    <div class="rating">
+                    </div>
+                    <span class="price"><span class="amount"><span class="currencySymbol">预约量：</span>11321</span>
+                    </span>
+                    <p class="product-desc mt_20 mb_60"> More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.Cover Flow. Browse through your music collection by flipping..</p>
+                    <div class="button-group text-center">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+              <div class="item">
+                <div class="product-thumb  mb_30">
+                  <div class="image product-imageblock"> <a href="#"> <img data-name="product_image" src="../static/images/menu-banner3.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> <img src="../static/images/menu-banner3.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> </a> </div>
+                  <div class="caption product-detail text-left">
+                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">Latin literature from 45 BC, making it over old.</a></h6>
+                    <div class="rating">
+                    </div>
+                    <span class="price"><span class="amount"><span class="currencySymbol">预约量：</span>11321</span>
+                    </span>
+                    <p class="product-desc mt_20 mb_60"> More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.Cover Flow. Browse through your music collection by flipping..</p>
+                    <div class="button-group text-center">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+              <div class="item">
+                <div class="product-thumb  mb_30">
+                  <div class="image product-imageblock"> <a href="#"> <img data-name="product_image" src="../static/images/menu-banner3.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> <img src="../static/images/menu-banner3.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> </a> </div>
+                  <div class="caption product-detail text-left">
+                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">Latin literature from 45 BC, making it over old.</a></h6>
+                    <div class="rating">
+                    </div>
+                    <span class="price"><span class="amount"><span class="currencySymbol">预约量：</span>11321</span>
+                    </span>
+                    <p class="product-desc mt_20 mb_60"> More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.Cover Flow. Browse through your music collection by flipping..</p>
+                    <div class="button-group text-center">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-layout  product-grid  col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+              <div class="item">
+                <div class="product-thumb  mb_30">
+                  <div class="image product-imageblock"> <a href="#"> <img data-name="product_image" src="../static/images/menu-banner3.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> <img src="../static/images/menu-banner3.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> </a> </div>
+                  <div class="caption product-detail text-left">
+                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">Latin literature from 45 BC, making it over old.</a></h6>
+                    <div class="rating">
+                    </div>
+                    <span class="price"><span class="amount"><span class="currencySymbol">预约量：</span>11321</span>
+                    </span>
+                    <p class="product-desc mt_20 mb_60"> More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.Cover Flow. Browse through your music collection by flipping..</p>
+                    <div class="button-group text-center">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--          <div class="pagination-nav text-center mt_50">-->
+          <!--            <ul>-->
+          <!--              <li><a href="#"><i class="fa fa-angle-left"></i></a></li>-->
+          <!--              <li class="active"><a href="#">1</a></li>-->
+          <!--              <li><a href="#">2</a></li>-->
+          <!--              <li><a href="#">3</a></li>-->
+          <!--              <li><a href="#"><i class="fa fa-angle-right"></i></a></li>-->
+          <!--            </ul>-->
+          <!--          </div>-->
+        </div>
+      </div>
+    </div>
+    <!-- =====  CONTAINER END  ===== -->
+    <!-- =====  FOOTER START  ===== -->
+    <div class="footer pt_60">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 footer-block">
+            <div class="content_footercms_right">
+              <div class="footer-contact">
+                <div class="footer-logo mb_40"> <a href="index.html"> <img src="../static/images/footer-logo.png" alt="HealthCare"> </a> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 footer-block">
+          </div>
+          <div class="col-md-2 footer-block">
+          </div>
+          <div class="col-md-2 footer-block">
+          </div>
+          <div class="col-md-3">
+            <h6 class="ptb_20">联系方式</h6>
+            <ul>
+              <li>联系地址：北京市海淀区上园村3号</li><br>
+              <li>咨询电话：(+024) 666 888</li><br>
+              <li>电子邮箱：Contact@yourcompany.com</li>
+            </ul><br>
+            <div class="social_icon">
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-google"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-rss"></i></a></li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =====  FOOTER END  ===== -->
+  </div>
+  <a id="scrollup">Scroll</a>
+  <script th:src="@{/js/jQuery_v3.1.1.min.js}"></script>
+  <script th:src="@{/js/owl.carousel.min.js}"></script>
+  <script th:src="@{/js/bootstrap.min.js}"></script>
+  <script th:src="@{/js/jquery.magnific-popup.js}"></script>
+  <script th:src="@{/js/jquery-ui.js}"></script>
+  <script th:src="@{/js/custom.js}"></script>
+  <script>
+  $(function() {
+    $("#slider-range").slider({
+      range: true,
+      min: 0,
+      max: 500,
+      values: [75, 300],
+      slide: function(event, ui) {
+        $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+      }
+    });
+    $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+      " - $" + $("#slider-range").slider("values", 1));
+  });
+  </script>
+  <script>
+    // var search_type = document.getElementsByClassName("select-by-size");
+    // document.getElementById("select").value
+    var search_type = document.getElementById("select-by-size");
+    var search_input = document.getElementById("input-name");
+    var checkboxs = document.getElementsByName("chbox");
+    var checkboxAll="";
+    for(var i=0;i<checkboxs.length;i++) {
+      if (checkboxs[i].checked) {
+        checkboxAll += checkboxs[i].value + ","//将选中的值拼接，用“，”隔开
+      }
+    }
+      var hospital_type_level = checkboxAll.split(",")
+
+      //查询按钮
+      function search() {
+        var data = {
+          "search_type": search_type.value,
+          "hospital_type_level": hospital_type_level,
+          "search_input": search_input.value
+        };
+        var json = JSON.stringify(data);
+        $.ajax({
+          url: "/search/content",
+          data: json,
+          type: "POST",
+          //async : false,
+          dataType: 'json',
+          contentType: 'application/json;charset=UTF-8',
+          error: function (msg) {
+            console.log(msg);
+            console.log("Bad?");
+          },
+          success: function (msg) {
+            console.log("OK?");
+            console.log(msg);
+            if (msg["result"] == "OK") {
+              // hit.innerHTML = "登陆成功";
+              // var newurl = "/personalCenter?username=" + username.value;
+              // setTimeout("", 1000);
+              // window.location.href = newurl;
+            }
+            // else if (msg["result"] == "NO")
+            //   hit.innerHTML = "账号或密码错误"
+          }
+        });
+      }
+  </script>
+
+
+</body>
+
+</html>

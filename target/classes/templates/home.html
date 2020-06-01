@@ -1,0 +1,777 @@
+﻿<!DOCTYPE html>
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--<html lang="en">-->
+<html xmlns:th="http://www.thymeleaf.org">
+<!--<![endif]-->
+
+<head>
+  <!-- =====  BASIC PAGE NEEDS  ===== -->
+  <meta charset="utf-8">
+  <title>Home</title>
+  <!-- =====  SEO MATE  ===== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="distribution" content="global">
+  <meta name="revisit-after" content="2 Days">
+  <meta name="robots" content="ALL">
+  <meta name="rating" content="8 YEARS">
+  <meta name="Language" content="en-us">
+  <meta name="GOOGLEBOT" content="NOARCHIVE">
+  <!-- =====  MOBILE SPECIFICATION  ===== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width">
+  <!-- =====  CSS  ===== -->
+<!--  th?????????-->
+  <link type="text/css" rel="styleSheet"  th:href="@{/css/style.css}" />
+  <link type="text/css" rel="styleSheet"  th:href="@{/css/font-awesome.min.css}" />
+  <link type="text/css" rel="styleSheet"  th:href="@{/css/bootstrap.css}" />
+  <link type="text/css" rel="styleSheet"  th:href="@{/css/magnific-popup.css}" />
+  <link type="text/css" rel="styleSheet"  th:href="@{/css/owl.carousel.css}" />
+</head>
+
+<body>
+  <!-- =====  LODER  开始弹框===== -->
+  <div class="loder"></div>
+  <div class="wrapper">
+    <!-- =====  HEADER START 最顶框===== -->
+    <header id="header">
+    <!--    上方购物篮    -->
+      <div class="header">
+        <div class="container">
+          <nav class="navbar">
+            <div class="navbar-header mtb_20"> <a class="navbar-brand" href="index.html"> <img alt="HealthCared" src="../static/images/logo.png"> </a> </div>
+            <div class="header-right pull-right mtb_50">
+              <button class="navbar-toggle pull-left" type="button" data-toggle="collapse" data-target=".js-navbar-collapse"> <span class="i-bar"><i class="fa fa-bars"></i></span></button>
+              <div class="main-search pull-right">
+                <div class="header-search"> <a id="search-overlay-btn" href="search.html"></a> </div>
+              </div>
+            </div>
+            <div class="collapse navbar-collapse js-navbar-collapse pull-right">
+              <ul id="menu" class="nav navbar-nav">
+                <li> <a href="index.html">首 &nbsp; 页</a></li>
+                <li> <a href="list.html">列 &nbsp; 表</a></li>
+                <li> <a href="ny.html">个人中心</a></li>
+                <li> <a href="about.html">关于我们</a></li>
+              </ul>
+            </div>
+            <!-- /.nav-collapse -->
+          </nav>
+        </div>
+      </div>
+
+      <div class="header-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-3">
+              <div class="category">
+                <div class="menu-bar" data-target="#category-menu,#category-menu-responsive" data-toggle="collapse" aria-expanded="true" role="button">
+                  <h4 class="category_text">常见科室</h4>
+                  <span class="i-bar"><i class="fa fa-bars"></i></span></div>
+              </div>
+              <div id="category-menu-responsive" class="navbar collapse " aria-expanded="true" style="" role="button">
+                <div class="nav-responsive">
+                  <ul class="nav  main-navigation collapse in">
+                    <li><a href="#">内科</a></li>
+                    <li><a href="#">外科</a></li>
+                    <li><a href="#">妇科</a></li>
+                    <li><a href="#">儿科</a></li>
+                    <li><a href="#">皮肤科</a></li>
+                    <li><a href="#">眼科</a></li>
+                    <li><a href="#">口腔科</a></li>
+                    <li><a href="#">耳鼻喉科</a></li>
+                    <li><a href="#">中医科</a></li>
+                    <li><a href="#">男科</a></li>
+                    <li><a href="#">肿瘤科</a></li>
+                    <li><a href="#">传染科</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--   顶部滑动推荐           -->
+            <div class="col-sm-8 col-md-8 col-lg-9">
+              <div class="header-bottom-right offers">
+              	<div class="marquee"><span><i class="fa fa-circle" aria-hidden="true"></i> 在线预约避免排队</span>
+                  <span><i class="fa fa-circle" aria-hidden="true"></i> 覆盖全国三甲医院 </span>
+                  <span><i class="fa fa-circle" aria-hidden="true"></i> 24小时在线服务</span>
+                  <span><i class="fa fa-circle" aria-hidden="true"></i> 全国名医预约挂号</span>
+                  <span><i class="fa fa-circle" aria-hidden="true"></i> 知名专家答疑解惑</span>
+                  <span><i class="fa fa-circle" aria-hidden="true"></i> 详细记录问诊记录</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- =====  HEADER END  ===== -->
+    <!-- =====  CONTAINER START  ===== -->
+    <div class="container">
+      <div class="row ">
+        <div id="column-left" class="col-sm-4 col-md-4 col-lg-3 ">
+          <div id="category-menu" class="navbar collapse mb_40 hidden-sm-down in" aria-expanded="true" style="" role="button">
+            <div class="nav-responsive">
+              <ul class="nav  main-navigation collapse in ">
+                <li><a href="#">内科</a></li>
+                    <li><a href="#">外科</a></li>
+                    <li><a href="#">妇科</a></li>
+                    <li><a href="#">儿科</a></li>
+                    <li><a href="#">皮肤科</a></li>
+                    <li><a href="#">眼科</a></li>
+                    <li><a href="#">口腔科</a></li>
+                    <li><a href="#">耳鼻喉科</a></li>
+                    <li><a href="#">中医科</a></li>
+                    <li><a href="#">男科</a></li>
+                    <li><a href="#">肿瘤科</a></li>
+                    <li><a href="#">传染科</a></li>
+                    <li><a href="#">精神心理科</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="left_banner left-sidebar-widget mt_30 mb_50"> <a href="#"><img src="../static/images/left1.jpg" alt="Left Banner" class="img-responsive" /></a> </div>
+          <div class="left-special left-sidebar-widget mb_50">
+            <div class="heading-part mb_20 ">
+              <h2 class="main_title">预约量排行</h2>
+            </div>
+            <div id="left-special" class="owl-carousel">
+              <ul class="row ">
+                <li class="item product-layout-left mb_20">
+                  <div class="product-list col-xs-4">
+                    <div class="product-thumb">
+                      <div class="image product-imageblock"> <a href="#"> <img class="../img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/newsbg.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="static/images/newsbg.jpg"> </a> </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-8">
+                    <div class="caption product-detail">
+                      <h6 class="product-name"><a href="#">王建华</a></h6>
+                        <p>内科</p>
+<!--                      <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>-->
+                      <span class="price"><span class="amount"><span class="currencySymbol"></span>13281</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="item product-layout-left mb_20">
+                  <div class="product-list col-xs-4">
+                    <div class="product-thumb">
+                      <div class="image product-imageblock"> <a href="#"> <img class="../img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/newsbg.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="static/images/newsbg.jpg"> </a> </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-8">
+                    <div class="caption product-detail">
+                      <h6 class="product-name"><a href="#">王建华</a></h6>
+                        <p>内科</p>
+<!--                      <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>-->
+                      <span class="price"><span class="amount"><span class="currencySymbol"></span>13281</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="item product-layout-left mb_20">
+                  <div class="product-list col-xs-4">
+                    <div class="product-thumb">
+                      <div class="image product-imageblock"> <a href="#"> <img class="../img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/newsbg.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/newsbg.jpg"> </a> </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-8">
+                    <div class="caption product-detail">
+                      <h6 class="product-name"><a href="#">王建华</a></h6>
+                        <p>内科</p>
+<!--                      <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>-->
+                      <span class="price"><span class="amount"><span class="currencySymbol"></span>13281</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="item product-layout-left mb_20">
+                  <div class="product-list col-xs-4">
+                    <div class="product-thumb">
+                      <div class="image product-imageblock"> <a href="#"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/newsbg.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/newsbg.jpg"> </a> </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-8">
+                    <div class="caption product-detail">
+                      <h6 class="product-name"><a href="#">王建华</a></h6>
+                        <p>内科</p>
+<!--                      <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>-->
+                      <span class="price"><span class="amount"><span class="currencySymbol"></span>13281</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="row ">
+                <li class="item product-layout-left mb_20">
+                  <div class="product-list col-xs-4">
+                    <div class="product-thumb">
+                      <div class="image product-imageblock"> <a href="#"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/newsbg.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/newsbg.jpg"> </a> </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-8">
+                    <div class="caption product-detail">
+                      <h6 class="product-name"><a href="#">王建华</a></h6>
+                        <p>内科</p>
+<!--                      <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>-->
+                      <span class="price"><span class="amount"><span class="currencySymbol"></span>13281</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="item product-layout-left mb_20">
+                  <div class="product-list col-xs-4">
+                    <div class="product-thumb">
+                      <div class="image product-imageblock"> <a href="#"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/newsbg.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/newsbg.jpg"> </a> </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-8">
+                    <div class="caption product-detail">
+                      <h6 class="product-name"><a href="#">王建华</a></h6>
+                        <p>内科</p>
+<!--                      <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>-->
+                      <span class="price"><span class="amount"><span class="currencySymbol"></span>13281</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="item product-layout-left mb_20">
+                  <div class="product-list col-xs-4">
+                    <div class="product-thumb">
+                      <div class="image product-imageblock"> <a href="#"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/newsbg.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/newsbg.jpg"> </a> </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-8">
+                    <div class="caption product-detail">
+                      <h6 class="product-name"><a href="#">王建华</a></h6>
+                        <p>内科</p>
+<!--                      <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>-->
+                      <span class="price"><span class="amount"><span class="currencySymbol"></span>13281</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="item product-layout-left mb_20">
+                  <div class="product-list col-xs-4">
+                    <div class="product-thumb">
+                      <div class="image product-imageblock"> <a href="#"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/newsbg.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/newsbg.jpg"> </a> </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-8">
+                    <div class="caption product-detail">
+                      <h6 class="product-name"><a href="#">王建华</a></h6>
+                        <p>内科</p>
+<!--                      <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>-->
+                      <span class="price"><span class="amount"><span class="currencySymbol"></span>13281</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="left_banner left-sidebar-widget mb_50"> <a href="#"><img src="../static/images/left2.jpg" alt="Left Banner" class="img-responsive" /></a> </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="left-cms left-sidebar-widget mb_50">
+        <ul>
+          <li>
+            <div class="feature-i-left ptb_40">
+              <div class="icon-right Shipping"></div>
+              <h6>便捷预约</h6>
+              <p>网上预约避免排队</p>
+            </div>
+          </li>
+          <li>
+            <div class="feature-i-left ptb_40">
+              <div class="icon-right Order"></div>
+              <h6>在线解答</h6>
+              <p>每天24小时在线答疑</p>
+            </div>
+          </li>
+          <li>
+            <div class="feature-i-left ptb_40">
+              <div class="icon-right Save"></div>
+              <h6>全面覆盖</h6>
+              <p>包含全国300多家三甲医院</p>
+            </div>
+          </li>
+          <li>
+            <div class="feature-i-left ptb_40">
+              <div class="icon-right Safe"></div>
+              <h6>放心预约</h6>
+              <p>100%权威认证</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+<!--       左栏最下方——人员介绍和标签     -->
+          <div class="Testimonial left-sidebar-widget mb_50">
+<!--            <div class="heading-part mb_20 ">-->
+<!--              <h2 class="main_title">Testimonial</h2>-->
+<!--            </div>-->
+<!--            <div class="client owl-carousel text-center pt_10">-->
+<!--              <div class="item client-detail">-->
+<!--                <div class="client-avatar"> <img alt="" src="static/images/user1.jpg"> </div>-->
+<!--                <div class="client-title  mt_30"><strong>joseph Lui</strong></div>-->
+<!--                <div class="client-designation mb_10">php Developer</div>-->
+<!--                <p><i class="fa fa-quote-left" aria-hidden="true"></i>Lorem ipsum dolor sit amet, volumus oporteat his at sea in Rem ipsum dolor sit amet, sea in odio ..</p>-->
+<!--              </div>-->
+<!--              <div class="item client-detail">-->
+<!--                <div class="client-avatar"> <img alt="" src="static/images/user2.jpg"> </div>-->
+<!--                <div class="client-title  mt_30"><strong>joseph Lui</strong></div>-->
+<!--                <div class="client-designation mb_10">php Developer</div>-->
+<!--                <p><i class="fa fa-quote-left" aria-hidden="true"></i>Lorem ipsum dolor sit amet, volumus oporteat his at sea in Rem ipsum dolor sit amet, sea in odio ..</p>-->
+<!--              </div>-->
+<!--              <div class="item client-detail">-->
+<!--                <div class="client-avatar"> <img alt="" src="static/images/user3.jpg"> </div>-->
+<!--                <div class="client-title  mt_30"><strong>joseph Lui</strong></div>-->
+<!--                <div class="client-designation mb_10">php Developer</div>-->
+<!--                <p><i class="fa fa-quote-left" aria-hidden="true"></i>Lorem ipsum dolor sit amet, volumus oporteat his at sea in Rem ipsum dolor sit amet, sea in odio ..</p>-->
+<!--              </div>-->
+<!--            </div>-->
+          </div>
+          <div class="Tags left-sidebar-widget mb_50">
+          </div>
+        </div>
+        <div id="column-right" class="col-sm-8 col-md-8 col-lg-9 mtb_30">
+          <!-- =====  BANNER STRAT  ===== -->
+          <div class="banner">
+            <div class="main-banner owl-carousel">
+              <div class="item"><a href="#"><img src="../static/images/main_banner1.jpg" alt="Main Banner" class="img-responsive" /></a></div>
+              <div class="item"><a href="#"><img src="../static/images/main_banner1.jpg" alt="Main Banner" class="img-responsive" /></a></div>
+            </div>
+          </div>
+          <!-- =====  BANNER END  ===== -->
+            <br>
+          <!-- =====  SUB BANNER  STRAT ===== -->
+          <div class="row">
+            <div class="cms_banner mt_10">
+              <div class="col-xs-6 col-sm-12 col-md-6 mt_20">
+                <div id="subbanner1" class="sub-hover"> <a href="#"><img src="../static/images/sub1.jpg" alt="Sub Banner1" class="img-responsive"></a>
+                  <div class="bannertext">
+                    <h2>XXXX医院</h2>
+                    <p class="mt_10">全国知名医院</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-12 col-md-6 mt_20">
+                <div id="subbanner2" class="sub-hover"> <a href="#"><img src="../static/images/sub2.jpg" alt="Sub Banner2" class="img-responsive"></a>
+                  <div class="bannertext">
+                    <h2>XXXX医院</h2>
+                    <p class="mt_10">全国知名医院</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- =====  SUB BANNER END  ===== -->
+
+<br>
+          <!-- =====  product ===== -->
+          <div class="row">
+            <div class="col-md-4">
+              <div class="heading-part mb_20 ">
+                <h2 class="main_title">热门医院</h2>
+              </div>
+              <div id="featu-pro" class="owl-carousel">
+                <ul class="row ">
+                  <li class="item product-layout-left mb_20">
+                    <div class="product-list col-xs-4">
+                      <div class="product-thumb">
+                        <div class="image product-imageblock"> <a href="#"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/menu-banner1.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="static/images/menu-banner1.jpg"> </a> </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-8">
+                      <div class="caption product-detail">
+                          <h6 class="product-name"><a href="#">XXXX医院</a></h6>
+                          <p>tel：11111</p>
+<!--                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>-->
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item product-layout-left mb_20">
+                    <div class="product-list col-xs-4">
+                      <div class="product-thumb">
+                        <div class="image product-imageblock"> <a href="#"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/menu-banner1.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="static/images/menu-banner1.jpg"> </a> </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-8">
+                      <div class="caption product-detail">
+                        <h6 class="product-name"><a href="#">XXXX医院</a></h6>
+                          <p>tel：11111</p>
+<!--                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>-->
+<!--                        <span class="price"><span class="amount"><span class="currencySymbol">tel:</span>88868818</span>-->
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item product-layout-left mb_20">
+                    <div class="product-list col-xs-4">
+                      <div class="product-thumb">
+                        <div class="image product-imageblock"> <a href="#"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/menu-banner1.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="static/images/menu-banner1.jpg"> </a> </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-8">
+                      <div class="caption product-detail">
+                        <h6 class="product-name"><a href="#">XXXX医院</a></h6>
+                          <p>tel：11111</p>
+<!--                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>-->
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="row ">
+                  <li class="item product-layout-left mb_20">
+                    <div class="product-list col-xs-4">
+                      <div class="product-thumb">
+                        <div class="image product-imageblock"> <a href="#"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/menu-banner1.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="static/images/menu-banner1.jpg"> </a> </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-8">
+                      <div class="caption product-detail">
+                        <h6 class="product-name"><a href="#">XXXX医院</a></h6>
+                          <p>tel：11111</p>
+<!--                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>-->
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item product-layout-left mb_20">
+                    <div class="product-list col-xs-4">
+                      <div class="product-thumb">
+                        <div class="image product-imageblock"> <a href="#"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/menu-banner1.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="static/images/menu-banner1.jpg"> </a> </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-8">
+                      <div class="caption product-detail">
+                        <h6 class="product-name"><a href="#">XXXX医院</a></h6>
+<!--                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>-->
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item product-layout-left mb_20">
+                    <div class="product-list col-xs-4">
+                      <div class="product-thumb">
+                        <div class="image product-imageblock"> <a href="#"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/menu-banner1.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="static/images/menu-banner1.jpg"> </a> </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-8">
+                      <div class="caption product-detail">
+                        <h6 class="product-name"><a href="#">XXXX医院</a></h6>
+<!--                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>-->
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="heading-part mb_20 ">
+                <h2 class="main_title">热门科室</h2>
+              </div>
+              <div id="bests-pro" class="owl-carousel">
+                <ul class="row ">
+                  <li class="item product-layout-left mb_20">
+                    <div class="product-list col-xs-4">
+                      <div class="product-thumb">
+                        <div class="image product-imageblock"> <a href="#"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/menu-banner3.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/menu-banner3.jpg"> </a> </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-8">
+                      <div class="caption product-detail">
+                        <h6 class="product-name"><a href="#">内科</a></h6>
+                          <p>糖尿病|高血压|冠心病</p>
+<!--                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>-->
+<!--                        <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span>-->
+<!--                        </span>-->
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item product-layout-left mb_20">
+                    <div class="product-list col-xs-4">
+                      <div class="product-thumb">
+                        <div class="image product-imageblock"> <a href="#"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/menu-banner3.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/menu-banner3.jpg"> </a> </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-8">
+                      <div class="caption product-detail">
+                        <h6 class="product-name"><a href="#">内科</a></h6>
+                          <p>糖尿病|高血压|冠心病</p>
+<!--                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>-->
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item product-layout-left mb_20">
+                    <div class="product-list col-xs-4">
+                      <div class="product-thumb">
+                        <div class="image product-imageblock"> <a href="#"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/menu-banner3.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/menu-banner3.jpg"> </a> </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-8">
+                      <div class="caption product-detail">
+                        <h6 class="product-name"><a href="#">内科</a></h6>
+                          <p>糖尿病|高血压|冠心病</p>
+<!--                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>-->
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="row ">
+                  <li class="item product-layout-left mb_20">
+                    <div class="product-list col-xs-4">
+                      <div class="product-thumb">
+                        <div class="image product-imageblock"> <a href="#"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/menu-banner3.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/menu-banner3.jpg"> </a> </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-8">
+                      <div class="caption product-detail">
+                        <h6 class="product-name"><a href="#">内科</a></h6>
+                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>
+<!--                        <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span>-->
+<!--                        </span>-->
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item product-layout-left mb_20">
+                    <div class="product-list col-xs-4">
+                      <div class="product-thumb">
+                        <div class="image product-imageblock"> <a href="#"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/menu-banner3.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/menu-banner3.jpg"> </a> </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-8">
+                      <div class="caption product-detail">
+                        <h6 class="product-name"><a href="#">内科</a></h6>
+                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item product-layout-left mb_20">
+                    <div class="product-list col-xs-4">
+                      <div class="product-thumb">
+                        <div class="image product-imageblock"> <a href="#"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/menu-banner3.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/menu-banner3.jpg"> </a> </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-8">
+                      <div class="caption product-detail">
+                        <h6 class="product-name"><a href="#">内科</a></h6>
+                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="heading-part mb_20 ">
+                <h2 class="main_title">热门医生</h2>
+              </div>
+              <div id="new-pro" class="owl-carousel">
+                <ul class="row ">
+                  <li class="item product-layout-left mb_20">
+                    <div class="product-list col-xs-4">
+                      <div class="product-thumb">
+                        <div class="image product-imageblock"> <a href="#"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/newsbg.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/newsbg.jpg"> </a> </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-8">
+                      <div class="caption product-detail">
+                        <h6 class="product-name"><a href="#">XXX医生</a></h6>
+                      <p>内科</p>
+<!--                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>-->
+<!--                        <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span>-->
+<!--                        </span>-->
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item product-layout-left mb_20">
+                    <div class="product-list col-xs-4">
+                      <div class="product-thumb">
+                        <div class="image product-imageblock"> <a href="#"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/newsbg.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/newsbg.jpg"> </a> </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-8">
+                      <div class="caption product-detail">
+                        <h6 class="product-name"><a href="#">XXX医生</a></h6>
+                           <p>内科</p>
+<!--                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>-->
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item product-layout-left mb_20">
+                    <div class="product-list col-xs-4">
+                      <div class="product-thumb">
+                        <div class="image product-imageblock"> <a href="#"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/newsbg.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/newsbg.jpg"> </a> </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-8">
+                      <div class="caption product-detail">
+                        <h6 class="product-name"><a href="#">XXX医生</a></h6>
+                           <p>内科</p>
+<!--                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>-->
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="row ">
+                  <li class="item product-layout-left mb_20">
+                    <div class="product-list col-xs-4">
+                      <div class="product-thumb">
+                        <div class="image product-imageblock"> <a href="#"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/newsbg.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/newsbg.jpg"> </a> </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-8">
+                      <div class="caption product-detail">
+                        <h6 class="product-name"><a href="#">XXX医生——内科</a></h6>
+                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>
+<!--                        <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span>-->
+<!--                        </span>-->
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item product-layout-left mb_20">
+                    <div class="product-list col-xs-4">
+                      <div class="product-thumb">
+                        <div class="image product-imageblock"> <a href="#"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/newsbg.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/newsbg.jpg"> </a> </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-8">
+                      <div class="caption product-detail">
+                        <h6 class="product-name"><a href="#">XXX医生——内科</a></h6>
+                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item product-layout-left mb_20">
+                    <div class="product-list col-xs-4">
+                      <div class="product-thumb">
+                        <div class="image product-imageblock"> <a href="#"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/newsbg.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="../static/images/newsbg.jpg"> </a> </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-8">
+                      <div class="caption product-detail">
+                        <h6 class="product-name"><a href="#">XXX医生——内科</a></h6>
+                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- =====  product end  ===== -->
+
+          <!-- =====  SUB BANNER  STRAT ===== -->
+          <div class="row">
+            <div class="cms_banner mt_40 mb_50">
+              <div class="col-xs-12">
+                <div id="subbanner3" class="banner sub-hover"> <a href="#"><img src="../static/images/sub3.jpg" alt="Sub Banner3" class="img-responsive"></a> </div>
+              </div>
+            </div>
+          </div>
+          <!-- =====  SUB BANNER END  ===== -->
+
+          <!--Team Carousel -->
+          <div class="heading-part mb_10">
+            <h2 class="main_title mt_50">知名专家</h2>
+          </div>
+          <div class="team_grid box">
+            <div class="team3col  owl-carousel">
+              <div class="item team-detail">
+                  <div class="team-item-img"> <a href="#"><img src="../static/images/tm1.jpg" alt="" /> </a></div>
+                <div class="team-designation mt_20">传染科   主任医师</div>
+                <h4 class="team-title  mtb_10">joseph Lui </h4>
+                <p>主要从事传染病临床、科研和教学工作，擅长各类肝炎、感染性疾病、新发突发传染病诊治，尤其是肝衰竭、病毒性肝炎、肝病微生态研究..</p>
+              </div>
+              <div class="item team-detail">
+                  <div class="team-item-img"> <a href="#"><img src="../static/images/tm2.jpg" alt="" /> </a></div>
+                <div class="team-designation mt_20">传染科   主任医师</div>
+                <h4 class="team-title  mtb_10">joseph Lui </h4>
+                <p>主要从事传染病临床、科研和教学工作，擅长各类肝炎、感染性疾病、新发突发传染病诊治，尤其是肝衰竭、病毒性肝炎、肝病微生态研究..</p>
+              </div>
+              <div class="item team-detail">
+                  <div class="team-item-img"> <a href="#"><img src="../static/images/tm3.jpg" alt="" /> </a></div>
+                <div class="team-designation mt_20">传染科   主任医师</div>
+                <h4 class="team-title  mtb_10">joseph Lui </h4>
+                <p>主要从事传染病临床、科研和教学工作，擅长各类肝炎、感染性疾病、新发突发传染病诊治，尤其是肝衰竭、病毒性肝炎、肝病微生态研究..</p>
+              </div>
+              <div class="item team-detail">
+                  <div class="team-item-img"> <a href="#"><img src="../static/images/tm4.jpg" alt="" /> </a></div>
+                <div class="team-designation mt_20">传染科   主任医师</div>
+                <h4 class="team-title  mtb_10">joseph Lui </h4>
+                <p>主要从事传染病临床、科研和教学工作，擅长各类肝炎、感染性疾病、新发突发传染病诊治，尤其是肝衰竭、病毒性肝炎、肝病微生态研究..</p>
+              </div>
+              <div class="item team-detail">
+                  <div class="team-item-img"> <a href="#"><img src="../static/images/tm5.jpg" alt="" /> </a></div>
+                <div class="team-designation mt_20">传染科   主任医师</div>
+                <h4 class="team-title  mtb_10">joseph Lui </h4>
+                <p>主要从事传染病临床、科研和教学工作，擅长各类肝炎、感染性疾病、新发突发传染病诊治，尤其是肝衰竭、病毒性肝炎、肝病微生态研究..</p>
+              </div>
+            </div>
+          </div>
+          <!--End Team Carousel -->
+
+          <!-- =====  SUB BANNER  STRAT ===== -->
+          <div class="row">
+            <div class="cms_banner mt_60 mb_50">
+              <div class="col-xs-12">
+                <div id="subbanner4" class="banner sub-hover"> <a href="#"><img src="../static/images/sub4.jpg" alt="Sub Banner4" class="img-responsive"></a>
+                  <div class="bannertext"> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- =====  SUB BANNER END  ===== -->
+          <!-- =====  Blog ===== -->
+        </div>
+      </div>
+    </div>
+    <!-- =====  CONTAINER END  ===== -->
+    <!-- =====  FOOTER START  ===== -->
+    <div class="footer pt_60">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 footer-block">
+            <div class="content_footercms_right">
+              <div class="footer-contact">
+                <div class="footer-logo mb_40"> <a href="index.html"> <img src="../static/images/footer-logo.png" alt="HealthCare"> </a> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 footer-block">
+          </div>
+          <div class="col-md-2 footer-block">
+          </div>
+          <div class="col-md-2 footer-block">
+          </div>
+          <div class="col-md-3">
+            <h6 class="ptb_20">联系方式</h6>
+            <ul>
+              <li>联系地址：北京市海淀区上园村3号</li><br>
+              <li>咨询电话：(+024) 666 888</li><br>
+              <li>电子邮箱：Contact@yourcompany.com</li>
+            </ul><br>
+            <div class="social_icon">
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-google"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-rss"></i></a></li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =====  FOOTER END  ===== -->
+  </div>
+  <a id="scrollup">Scroll</a>
+  <script th:src="@{/js/jQuery_v3.1.1.min.js}"></script>
+  <script th:src="@{/js/owl.carousel.min.js}"></script>
+  <script th:src="@{/js/bootstrap.min.js}"></script>
+  <script th:src="@{/js/jquery.magnific-popup.js}"></script>
+  <script th:src="@{/js/jquery.firstVisitPopup.js}"></script>
+  <script th:src="@{/js/custom.js}"></script>
+</body>
+
+</html>
